@@ -1,0 +1,60 @@
+<html lang="en" ng-app="insuranceApp">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insurance company</title>
+  <link rel="shortcut icon" type="image/png" href="logo.png" />
+
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.6/angular-material.min.css">
+  <!-- Roboto font -->
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Custom CSS for app -->
+  <link rel="stylesheet" href="app.css" />
+
+</head>
+
+<body>
+
+  <md-toolbar class="md-primary">
+    <div class="md-toolbar-tools">
+      <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+        <md-icon md-svg-icon="img/icon/menu.svg"></md-icon>
+      </md-button>
+      <h1 class="md-flex"><a ui-sref="home"><md-icon class="home-logo" md-svg-icon="logo.svg"></md-icon>Company name</a></h1>
+    </div>
+  </md-toolbar>
+
+  <ui-view>
+    UI view stuff goes in here
+  </ui-view>
+
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-messages.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-resource.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.6/angular-material.min.js"></script>
+
+  <!-- Application bootstrap  -->
+  <script src="app.js"></script>
+  <script src="app.config.js"></script>
+
+  <!-- Core services: angularCSS -->
+  <script src="core/angular-css.min.js"></script>
+
+  <!-- Component: allRoutes -->
+  <script src="all-routes/all-routes.component.js"></script>
+
+
+</body>
+
+</html>
