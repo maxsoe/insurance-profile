@@ -1,6 +1,24 @@
 <div layout="column" layout-margin layout-gt-xs="row" layout-align-gt-xs="center start" layout-wrap>
 
   <md-content>
+
+    <md-list flex>
+      <md-subheader class="md-no-sticky">Personal details</md-subheader>
+      <md-list-item class="md-2-line" ng-repeat="detail in yourDetailsCtrl.details">
+        <md-icon md-svg-icon="{{detail.options.icon}}" ng-if="detail.options.icon" ng-class="{'md-avatar-icon': detail.options.avatarIcon}"></md-icon>
+        <img ng-src="{{detail.options.face}}?25" class="md-avatar" alt="{{detail.options.face}}" ng-if="detail.options.face" />
+        <div class="md-list-item-text" ng-class="{'md-offset': detail.options.offset }">
+          <h3> {{ detail.value }} </h3>
+          <p> {{ detail.type }} </p>
+        </div>
+        <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="detail.options.actionIcon" aria-label="call">
+          <md-icon md-svg-icon="{{detail.options.actionIcon}}"></md-icon>
+        </md-button>
+      </md-list-item>
+    </md-list>
+
+    <md-divider></md-divider>
+
     <md-list flex>
       <md-subheader class="md-no-sticky">Contact info</md-subheader>
       <md-list-item class="md-2-line" ng-repeat="phone in yourDetailsCtrl.phones">
@@ -28,7 +46,7 @@
       </md-list-item>
     </md-list>
 
-<md-divider></md-divider>
+    <md-divider></md-divider>
 
     <md-list flex>
       <md-subheader class="md-no-sticky">Addresses</md-subheader>
@@ -43,7 +61,6 @@
           <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
         </md-button>
       </md-list-item>
-      <md-divider md-inset></md-divider>
     </md-list>
 
   </md-content>

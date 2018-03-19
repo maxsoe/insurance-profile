@@ -18,6 +18,22 @@ function YourDetailsController() {
 
   var imagePath = 'logo.png';
 
+  this.details = [{
+      type: 'Name',
+      value: 'Taylor Swift',
+      options: {
+        icon: 'communication:phone'
+      }
+    },
+    {
+      type: 'Date of birth',
+      value: '25 November 1989',
+      options: {
+        icon: 'communication:phone'
+      }
+    }
+  ];
+
   this.phones = [{
       type: 'Home',
       number: '(555) 251-1234',
