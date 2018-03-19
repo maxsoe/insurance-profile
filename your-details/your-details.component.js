@@ -3,7 +3,8 @@ angular
   .module('yourDetails', [])
   .config(function($mdIconProvider) {
     $mdIconProvider
-      .iconSet('communication', 'img/icon-set/communication-icons.svg', 24);
+      .iconSet('communication', 'img/icon-set/communication-icons.svg', 24)
+      .iconSet('maps', 'img/icon-set/maps-icons.svg', 24);
   })
   .component('yourDetails', {
     // template: 'test template'
@@ -28,23 +29,23 @@ function YourDetailsController() {
       type: 'Cell',
       number: '(555) 786-9841',
       options: {
-        icon: 'communication:phone',
-        avatarIcon: true
+        offset: true
+      }
+    }
+  ];
+
+  this.emails = [{
+      type: 'Business',
+      address: 'taylor@taylorswift.com',
+      options: {
+        icon: 'communication:email'
       }
     },
     {
-      type: 'Office',
-      number: '(555) 314-1592',
+      type: 'Personal email',
+      address: 'taytay@gmail.com',
       options: {
-        face: imagePath
-      }
-    },
-    {
-      type: 'Offset',
-      number: '(555) 192-2010',
-      options: {
-        offset: true,
-        actionIcon: 'communication:phone'
+        offset: true
       }
     }
   ];
@@ -54,14 +55,20 @@ function YourDetailsController() {
       street: '123 Business Street',
       city: 'London',
       postcode: 'EC1R 4RB',
-      country: 'United Kingdom'
+      country: 'United Kingdom',
+      options: {
+        icon: 'maps:place'
+      }
     },
     {
       type: 'Home',
       street: '123 Fake Street',
       city: 'London',
       postcode: 'SW4E 7FA',
-      country: 'United Kingdom'
+      country: 'United Kingdom',
+      options: {
+        offset: true
+      }
     }
   ];
 };
