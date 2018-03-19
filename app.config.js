@@ -13,7 +13,8 @@ angular
     var homeState = {
       name: 'home',
       url: '/',
-      template: '<your-details></your-details>'
+      // template: '<proj-footer></proj-footer>'
+      template: '<your-details></your-details><proj-footer></proj-footer>'
     };
 
     $stateProvider
