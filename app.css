@@ -64,9 +64,14 @@ strong {
  * OVERRIDES
  ***************/
 
-.home-logo {
+.md-toolbar-tools .home-logo {
   margin-right: 0.8rem;
 }
+
+.md-toolbar-tools h1 {
+  margin-left: 1.6rem;
+}
+
 
 md-divider[md-inset] {
   margin-left: 7.2rem;
