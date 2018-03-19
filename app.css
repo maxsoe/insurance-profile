@@ -60,6 +60,14 @@ strong {
   font-weight: 500;
 }
 
+/***************
+ * OVERRIDES
+ ***************/
+
 .home-logo {
   margin-right: 0.8rem;
+}
+
+md-divider[md-inset] {
+  margin-left: 7.2rem;
 }
