@@ -1,4 +1,4 @@
-// Register `allRoutes` component, along with its associated controller and template
+// Register `yourDetails` component, along with its associated controller and template
 angular
   .module('yourDetails', [])
   .config(function($mdIconProvider) {
