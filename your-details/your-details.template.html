@@ -1,0 +1,39 @@
+<div layout="column" layout-margin layout-gt-xs="row" layout-align-gt-xs="center start" layout-wrap>
+
+  <md-content>
+    <md-list flex>
+      <md-subheader class="md-no-sticky">Contact info</md-subheader>
+      <md-list-item class="md-2-line" ng-repeat="phone in yourDetailsCtrl.phones">
+        <md-icon md-svg-icon="{{phone.options.icon}}" ng-if="phone.options.icon" ng-class="{'md-avatar-icon': phone.options.avatarIcon}"></md-icon>
+        <img ng-src="{{phone.options.face}}?25" class="md-avatar" alt="{{phone.options.face}}" ng-if="phone.options.face" />
+        <div class="md-list-item-text" ng-class="{'md-offset': phone.options.offset }">
+          <h3> {{ phone.number }} </h3>
+          <p> {{ phone.type }} </p>
+        </div>
+        <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="phone.options.actionIcon" aria-label="call">
+          <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
+        </md-button>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+    </md-list>
+
+    <md-list flex>
+      <md-subheader class="md-no-sticky">Addresses</md-subheader>
+      <md-list-item class="md-2-line" ng-repeat="address in yourDetailsCtrl.addresses">
+        <md-icon md-svg-icon="{{address.options.icon}}" ng-if="address.options.icon" ng-class="{'md-avatar-icon': phone.options.avatarIcon}"></md-icon>
+        <img ng-src="{{address.options.face}}?25" class="md-avatar" alt="{{address.options.face}}" ng-if="address.options.face" />
+        <div class="md-list-item-text" ng-class="{'md-offset': phone.options.offset }">
+          <h3> {{ address.street }} </h3>
+          <p> {{ address.type }} </p>
+        </div>
+        <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="phone.options.actionIcon" aria-label="call">
+          <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
+        </md-button>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+    </md-list>
+
+  </md-content>
+
+<md-divider></md-divider>
+</div>
