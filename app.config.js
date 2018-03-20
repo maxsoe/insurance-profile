@@ -2,17 +2,22 @@ angular
   .module('insuranceApp')
   .config(function($mdThemingProvider) {
 
-    var pinotNoirMap = $mdThemingProvider.extendPalette('indigo', {
+    var pinotNoirPrimaryMap = $mdThemingProvider.extendPalette('indigo', {
        '500': '#182848',
        'contrastDefaultColor': 'light'
      });
+     var pinotNoirSecondaryMap = $mdThemingProvider.extendPalette('indigo', {
+        '500': '#4b6cb7',
+        'contrastDefaultColor': 'light'
+      });
 
-     // Register the new color palette map with the name <code>neonRed</code>
-     $mdThemingProvider.definePalette('pinotNoir', pinotNoirMap);
+     // Register the new color palette map
+     $mdThemingProvider.definePalette('pinotNoirPrimary', pinotNoirPrimaryMap);
+     $mdThemingProvider.definePalette('pinotNoirSecondary', pinotNoirSecondaryMap);
 
     $mdThemingProvider.theme('default')
-      .primaryPalette('pinotNoir')
-      .accentPalette('pink')
+      .primaryPalette('pinotNoirPrimary')
+      .accentPalette('pinotNoirSecondary')
       .warnPalette('orange')
       .backgroundPalette('grey');
   })
