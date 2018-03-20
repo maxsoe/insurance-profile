@@ -1,12 +1,12 @@
 proj-footer {
-  background: rgb(63,81,181);
+  background: rgb(24,40,72);
   color: rgba(255,255,255,0.87);
 
   display: flex;
 }
 
 proj-footer * {
-  background: rgb(63,81,181);
+  background: rgb(24,40,72);
   color: rgba(255,255,255,0.87);
 }
 
