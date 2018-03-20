@@ -28,7 +28,8 @@ angular
       name: 'home',
       url: '/',
       // template: '<proj-footer></proj-footer>'
-      template: '<your-details></your-details><proj-footer></proj-footer>'
+      // template: '<your-details></your-details><proj-footer></proj-footer>'
+      component: 'yourDetails'
     };
 
     $stateProvider
