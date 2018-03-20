@@ -6,76 +6,87 @@
       <p class="id md-body-1">Id# 555-4685-8799</p>
       <h1 class="md-display-2">Taylor Swift</h1>
     </div>
-
   </md-content>
 </div>
-
-<div layout="column" layout-gt-xs="row" layout-align-gt-xs="center start" layout-wrap>
-
-  <md-content>
-
-    <md-list flex>
-      <md-subheader class="md-no-sticky">Personal details</md-subheader>
-      <md-list-item class="md-2-line" ng-repeat="detail in yourDetailsCtrl.details">
-        <md-icon md-svg-icon="{{detail.options.icon}}" ng-if="detail.options.icon" ng-class="{'md-avatar-icon': detail.options.avatarIcon}"></md-icon>
-        <img ng-src="{{detail.options.face}}?25" class="md-avatar" alt="{{detail.options.face}}" ng-if="detail.options.face" />
-        <div class="md-list-item-text" ng-class="{'md-offset': detail.options.offset }">
-          <h3> {{ detail.value }} </h3>
-          <p> {{ detail.type }} </p>
-        </div>
-        <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="detail.options.actionIcon" aria-label="call">
-          <md-icon md-svg-icon="{{detail.options.actionIcon}}"></md-icon>
-        </md-button>
-      </md-list-item>
-    </md-list>
-
-    <md-divider></md-divider>
-
-    <md-list flex>
-      <md-subheader class="md-no-sticky">Contact info</md-subheader>
-      <md-list-item class="md-2-line" ng-repeat="phone in yourDetailsCtrl.phones">
-        <md-icon md-svg-icon="{{phone.options.icon}}" ng-if="phone.options.icon" ng-class="{'md-avatar-icon': phone.options.avatarIcon}"></md-icon>
-        <img ng-src="{{phone.options.face}}?25" class="md-avatar" alt="{{phone.options.face}}" ng-if="phone.options.face" />
-        <div class="md-list-item-text" ng-class="{'md-offset': phone.options.offset }">
-          <h3> {{ phone.number }} </h3>
-          <p> {{ phone.type }} </p>
-        </div>
-        <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="phone.options.actionIcon" aria-label="call">
-          <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
-        </md-button>
-      </md-list-item>
-      <md-divider md-inset></md-divider>
-      <md-list-item class="md-2-line" ng-repeat="email in yourDetailsCtrl.emails">
-        <md-icon md-svg-icon="{{email.options.icon}}" ng-if="email.options.icon" ng-class="{'md-avatar-icon': email.options.avatarIcon}"></md-icon>
-        <img ng-src="{{email.options.face}}?25" class="md-avatar" alt="{{email.options.face}}" ng-if="email.options.face" />
-        <div class="md-list-item-text" ng-class="{'md-offset': email.options.offset }">
-          <h3> {{ email.address }} </h3>
-          <p> {{ email.type }} </p>
-        </div>
-        <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="email.options.actionIcon" aria-label="call">
-          <md-icon md-svg-icon="{{email.options.actionIcon}}"></md-icon>
-        </md-button>
-      </md-list-item>
-    </md-list>
-
-    <md-divider></md-divider>
-
-    <md-list flex>
-      <md-subheader class="md-no-sticky">Addresses</md-subheader>
-      <md-list-item class="md-2-line" ng-repeat="address in yourDetailsCtrl.addresses">
-        <md-icon md-svg-icon="{{address.options.icon}}" ng-if="address.options.icon" ng-class="{'md-avatar-icon': phone.options.avatarIcon}"></md-icon>
-        <img ng-src="{{address.options.face}}?25" class="md-avatar" alt="{{address.options.face}}" ng-if="address.options.face" />
-        <div class="md-list-item-text" ng-class="{'md-offset': address.options.offset }">
-          <h3> {{ address.street }} </h3>
-          <p> {{ address.type }} </p>
-        </div>
-        <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="phone.options.actionIcon" aria-label="call">
-          <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
-        </md-button>
-      </md-list-item>
-    </md-list>
-
+<md-content>
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="two">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab Two</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+          <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Your details">
+        <md-content class="md-padding">
+          <div layout="column" layout-gt-xs="row" layout-align-gt-xs="center start" layout-wrap>
+            <md-content>
+              <md-list flex>
+                <md-subheader class="md-no-sticky">Personal details</md-subheader>
+                <md-list-item class="md-2-line" ng-repeat="detail in yourDetailsCtrl.details">
+                  <md-icon md-svg-icon="{{detail.options.icon}}" ng-if="detail.options.icon" ng-class="{'md-avatar-icon': detail.options.avatarIcon}"></md-icon>
+                  <img ng-src="{{detail.options.face}}?25" class="md-avatar" alt="{{detail.options.face}}" ng-if="detail.options.face" />
+                  <div class="md-list-item-text" ng-class="{'md-offset': detail.options.offset }">
+                    <h3> {{ detail.value }} </h3>
+                    <p> {{ detail.type }} </p>
+                  </div>
+                  <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="detail.options.actionIcon" aria-label="call">
+                    <md-icon md-svg-icon="{{detail.options.actionIcon}}"></md-icon>
+                  </md-button>
+                </md-list-item>
+              </md-list>
+              <md-divider></md-divider>
+              <md-list flex>
+                <md-subheader class="md-no-sticky">Contact info</md-subheader>
+                <md-list-item class="md-2-line" ng-repeat="phone in yourDetailsCtrl.phones">
+                  <md-icon md-svg-icon="{{phone.options.icon}}" ng-if="phone.options.icon" ng-class="{'md-avatar-icon': phone.options.avatarIcon}"></md-icon>
+                  <img ng-src="{{phone.options.face}}?25" class="md-avatar" alt="{{phone.options.face}}" ng-if="phone.options.face" />
+                  <div class="md-list-item-text" ng-class="{'md-offset': phone.options.offset }">
+                    <h3> {{ phone.number }} </h3>
+                    <p> {{ phone.type }} </p>
+                  </div>
+                  <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="phone.options.actionIcon" aria-label="call">
+                    <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
+                  </md-button>
+                </md-list-item>
+                <md-divider md-inset></md-divider>
+                <md-list-item class="md-2-line" ng-repeat="email in yourDetailsCtrl.emails">
+                  <md-icon md-svg-icon="{{email.options.icon}}" ng-if="email.options.icon" ng-class="{'md-avatar-icon': email.options.avatarIcon}"></md-icon>
+                  <img ng-src="{{email.options.face}}?25" class="md-avatar" alt="{{email.options.face}}" ng-if="email.options.face" />
+                  <div class="md-list-item-text" ng-class="{'md-offset': email.options.offset }">
+                    <h3> {{ email.address }} </h3>
+                    <p> {{ email.type }} </p>
+                  </div>
+                  <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="email.options.actionIcon" aria-label="call">
+                    <md-icon md-svg-icon="{{email.options.actionIcon}}"></md-icon>
+                  </md-button>
+                </md-list-item>
+              </md-list>
+              <md-divider></md-divider>
+              <md-list flex>
+                <md-subheader class="md-no-sticky">Addresses</md-subheader>
+                <md-list-item class="md-2-line" ng-repeat="address in yourDetailsCtrl.addresses">
+                  <md-icon md-svg-icon="{{address.options.icon}}" ng-if="address.options.icon" ng-class="{'md-avatar-icon': phone.options.avatarIcon}"></md-icon>
+                  <img ng-src="{{address.options.face}}?25" class="md-avatar" alt="{{address.options.face}}" ng-if="address.options.face" />
+                  <div class="md-list-item-text" ng-class="{'md-offset': address.options.offset }">
+                    <h3> {{ address.street }} </h3>
+                    <p> {{ address.type }} </p>
+                  </div>
+                  <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="phone.options.actionIcon" aria-label="call">
+                    <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
+                  </md-button>
+                </md-list-item>
+              </md-list>
+            </md-content>
+          </div>
+        </md-content>
+      </md-tab>
+      <md-tab label="three">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab Three</h1>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
   </md-content>
-
-
-</div>
