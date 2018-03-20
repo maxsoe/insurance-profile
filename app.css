@@ -76,3 +76,7 @@ strong {
 md-divider[md-inset] {
   margin-left: 7.2rem;
 }
+
+.md-subheader-content {
+  color: #000020;
+}
