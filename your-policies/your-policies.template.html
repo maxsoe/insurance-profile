@@ -8,9 +8,45 @@
       <span class="md-title">{{policy.type}}</span>
       <span class="md-subhead">Expires {{policy.expiry}}</span>
     </md-card-header-text>
-    <md-button class="md-icon-button" aria-label="More">
-      <md-icon md-svg-icon="navigation:more-vert"></md-icon>
-    </md-button>
+    <md-menu>
+      <md-button aria-label="Open insurance policy interactions menu" class="md-icon-button" ng-click="yourPoliciesCtrl.openMenu($mdMenu, $event)">
+        <md-icon md-menu-origin md-svg-icon="navigation:more-vert"></md-icon>
+      </md-button>
+      <md-menu-content width="3">
+        <md-menu-item>
+          <md-button>
+            Certificate of insurance
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button>
+            Payment details
+          </md-button>
+        </md-menu-item>
+        <md-menu-divider></md-menu-divider>
+        <md-menu-item>
+          <md-button>
+            Make a claim
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button>
+            Renew policy
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button>
+            Update policy
+          </md-button>
+        </md-menu-item>
+        <md-menu-divider></md-menu-divider>
+        <md-menu-item>
+          <md-button>
+            Cancel policy
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
   </md-card-header>
   <md-divider ng-if="policy.options"></md-divider>
   <md-card-actions ng-if="policy.options" layout="column" layout-align="start start">
