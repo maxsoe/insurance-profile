@@ -6,7 +6,7 @@ section md-icon {
 
 .intro {
   height: calc(100vw * 9 / 16);
-  background-image: url("/img/bg/bg-profile.svg");
+  background-image: url("/img/bg/bg-bg2-2.svg");
   background-size: cover;
   z-index: 1;
 }
