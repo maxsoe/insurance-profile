@@ -22,18 +22,18 @@ function yourPoliciesController() {
     },
     {
       type: 'Professional indemnity insurance',
-      value: '21 October 2018'
+      expiry: '21 October 2018'
     },
     {
       type: 'Unoccupied property insurance',
-      value: '25 December 2018',
+      expiry: '25 December 2018',
       options: {
         claims: ['486257952']
       }
     },
     {
       type: 'Public liability insurance',
-      value: '8 February 2019'
+      expiry: '8 February 2019'
     }
   ];
 };

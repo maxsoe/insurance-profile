@@ -3,3 +3,11 @@ your-policies md-card .md-button.md-icon-button {
   float: right;
   margin-right: -0.8rem;
 }
+
+md-card md-card-header:last-child md-card-avatar {
+  margin-left: 0;
+}
+
+md-card md-card-header md-card-avatar+md-card-header-text {
+  max-height: none;
+}
