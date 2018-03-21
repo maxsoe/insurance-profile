@@ -5,6 +5,7 @@ var myApp = angular.module('insuranceApp', [
   'ui.router',
   'ngMaterial',
   'projProfile',
+  'yourPolicies',
   'yourDetails',
   'projFooter'
 ]);
