@@ -29,7 +29,8 @@ angular
       url: '/',
       // template: '<proj-footer></proj-footer>'
       // template: '<your-details></your-details><proj-footer></proj-footer>'
-      component: 'yourDetails'
+      // component: 'yourDetails'
+      component: 'projProfile'
     };
 
     $stateProvider

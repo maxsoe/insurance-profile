@@ -1,0 +1,87 @@
+/* section md-icon {
+  margin-left: 0;
+  margin-right: 3.2rem;
+  margin-top: 1.28rem;
+} */
+
+.intro {
+  height: calc(100vw * 9 / 16);
+  background-image: url("/img/bg/bg-bg2-2.svg");
+  background-size: cover;
+  z-index: 1;
+}
+  .intro .text {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    z-index: 10;
+    /* align-items: flex-end; */
+
+/* https://css-tricks.com/easing-linear-gradients/ */
+    background: linear-gradient(
+     23deg,
+     hsla(300, 80%, 50%, 0.7) 0%,
+     hsla(299.1, 80.2%, 50.6%, 0.703) 9.7%,
+     hsla(296.8, 80.7%, 52.1%, 0.713) 18.9%,
+     hsla(293.3, 81.6%, 54.3%, 0.727) 27.4%,
+     hsla(289.1, 82.6%, 56.7%, 0.745) 35.2%,
+     hsla(284.3, 83.7%, 59.2%, 0.764) 42.5%,
+     hsla(279.2, 85%, 61.7%, 0.786) 49.3%,
+     hsla(274, 86.4%, 64%, 0.808) 55.7%,
+     hsla(268.5, 87.8%, 66.2%, 0.831) 61.8%,
+     hsla(263, 89.4%, 68.2%, 0.854) 67.7%,
+     hsla(257.4, 91%, 70.1%, 0.878) 73.4%,
+     hsla(251.8, 92.7%, 71.8%, 0.902) 78.9%,
+     hsla(246.2, 94.4%, 73.4%, 0.927) 84.3%,
+     hsla(240.6, 96.2%, 74.9%, 0.951) 89.6%,
+     hsla(235.4, 98.3%, 74.3%, 0.976) 94.9%,
+     hsl(231.1, 100%, 73.5%) 100%
+    );
+    background: linear-gradient(
+      to top,
+     hsl(0, 0%, 0%) 0%,
+     hsla(0, 0%, 0%, 0.738) 19%,
+     hsla(0, 0%, 0%, 0.541) 34%,
+     hsla(0, 0%, 0%, 0.382) 47%,
+     hsla(0, 0%, 0%, 0.278) 56.5%,
+     hsla(0, 0%, 0%, 0.194) 65%,
+     hsla(0, 0%, 0%, 0.126) 73%,
+     hsla(0, 0%, 0%, 0.075) 80.2%,
+     hsla(0, 0%, 0%, 0.042) 86.1%,
+     hsla(0, 0%, 0%, 0.021) 91%,
+     hsla(0, 0%, 0%, 0.008) 95.2%,
+     hsla(0, 0%, 0%, 0.002) 98.2%,
+     hsla(0, 0%, 0%, 0) 100%
+    );
+  }
+  .intro .text h1 {
+    margin-bottom: 0.8rem;
+    margin-bottom: 0;
+    color: #fff;
+  }
+  .intro .text .id {
+    margin-left: -0.8rem;
+    margin-top: 0;
+    margin-bottom: 3.2rem;
+    padding-left: 1.6rem;
+    padding-right: 0.8rem;
+
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 1.6rem 1.6rem 0;
+    opacity: 0.76;
+  }
+
+.intro .logo {
+  position: absolute;
+  height: calc(100vw * 9 / 16);
+  width: 100vw;
+
+  background-image: url("/img/icon/ic_account_circle_black_48px.svg");
+  background-size: 30vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  opacity: 0.38;
+  z-index: -1;
+}
