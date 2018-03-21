@@ -4,6 +4,10 @@
   margin-top: 1.28rem;
 } */
 
+md-tabs-canvas {
+    background: #fff;
+}
+
 .intro {
   height: calc(100vw * 9 / 16);
   background-image: url("/img/bg/bg-bg2-2.svg");
