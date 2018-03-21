@@ -4,7 +4,8 @@ angular
   .config(function($mdIconProvider) {
     $mdIconProvider
       .iconSet('communication', 'img/icon-set/communication-icons.svg', 24)
-      .iconSet('maps', 'img/icon-set/maps-icons.svg', 24);
+      .iconSet('maps', 'img/icon-set/maps-icons.svg', 24)
+      .iconSet('action', 'img/icon-set/action-icons.svg', 24);
   })
   .component('yourDetails', {
     // template: 'test template'
@@ -22,14 +23,14 @@ function YourDetailsController() {
       type: 'Name',
       value: 'Taylor Swift',
       options: {
-        icon: 'communication:phone'
+        icon: 'action:account-circle'
       }
     },
     {
       type: 'Date of birth',
       value: '25 November 1989',
       options: {
-        icon: 'communication:phone'
+        icon: 'action:event'
       }
     }
   ];
@@ -42,9 +43,10 @@ function YourDetailsController() {
       }
     },
     {
-      type: 'Cell',
+      type: 'Mobile',
       number: '(555) 786-9841',
       options: {
+        default: true,
         offset: true
       }
     }
@@ -54,6 +56,7 @@ function YourDetailsController() {
       type: 'Business',
       address: 'taylor@taylorswift.com',
       options: {
+        default: true,
         icon: 'communication:email'
       }
     },
