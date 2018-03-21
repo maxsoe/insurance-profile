@@ -3,9 +3,10 @@ angular
   .module('yourDetails', [])
   .config(function($mdIconProvider) {
     $mdIconProvider
+      .iconSet('action', 'img/icon-set/action-icons.svg', 24)
       .iconSet('communication', 'img/icon-set/communication-icons.svg', 24)
-      .iconSet('maps', 'img/icon-set/maps-icons.svg', 24)
-      .iconSet('action', 'img/icon-set/action-icons.svg', 24);
+      .iconSet('editor', 'img/icon-set/editor-icons.svg', 24)
+      .iconSet('maps', 'img/icon-set/maps-icons.svg', 24);
   })
   .component('yourDetails', {
     // template: 'test template'

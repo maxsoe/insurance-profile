@@ -3,6 +3,9 @@
     <md-content>
       <md-list flex>
         <md-subheader class="md-no-sticky">Personal details</md-subheader>
+        <md-button aria-label="Edit personal details" class="md-icon-button md-accent edit-mode-button">
+          <md-icon md-menu-origin md-svg-icon="editor:mode-edit"></md-icon>
+        </md-button>
         <md-list-item class="md-2-line" ng-repeat="detail in yourDetailsCtrl.details">
           <md-icon md-svg-icon="{{detail.options.icon}}" ng-if="detail.options.icon" ng-class="{'md-avatar-icon': detail.options.avatarIcon}"></md-icon>
           <img ng-src="{{detail.options.face}}?25" class="md-avatar" alt="{{detail.options.face}}" ng-if="detail.options.face" />
@@ -18,6 +21,9 @@
       <md-divider></md-divider>
       <md-list flex>
         <md-subheader class="md-no-sticky">Contact info</md-subheader>
+        <md-button aria-label="Edit contact info" class="md-icon-button md-accent edit-mode-button">
+          <md-icon md-menu-origin md-svg-icon="editor:mode-edit"></md-icon>
+        </md-button>
         <md-list-item class="md-2-line" ng-repeat="phone in yourDetailsCtrl.phones">
           <md-icon md-svg-icon="{{phone.options.icon}}" ng-if="phone.options.icon" ng-class="{'md-avatar-icon': phone.options.avatarIcon}"></md-icon>
           <img ng-src="{{phone.options.face}}?25" class="md-avatar" alt="{{phone.options.face}}" ng-if="phone.options.face" />
@@ -45,6 +51,9 @@
       <md-divider></md-divider>
       <md-list flex class="addresses">
         <md-subheader class="md-no-sticky">Addresses</md-subheader>
+        <md-button aria-label="Edit addresses" class="md-icon-button md-accent edit-mode-button">
+          <md-icon md-menu-origin md-svg-icon="editor:mode-edit"></md-icon>
+        </md-button>
         <md-list-item class="md-2-line" ng-repeat="address in yourDetailsCtrl.addresses">
           <md-icon md-svg-icon="{{address.options.icon}}" ng-if="address.options.icon" ng-class="{'md-avatar-icon': phone.options.avatarIcon}"></md-icon>
           <img ng-src="{{address.options.face}}?25" class="md-avatar" alt="{{address.options.face}}" ng-if="address.options.face" />

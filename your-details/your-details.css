@@ -6,3 +6,13 @@ your-details .addresses md-list-item.md-2-line .md-list-item-text {
 your-details .addresses md-list-item.md-2-line .md-list-item-text h3 {
   line-height: 2.2rem;
 }
+
+your-details md-list {
+    position: relative;
+}
+
+your-details md-list button.edit-mode-button {
+  position: absolute;
+  top: 1.2rem;
+  right: 0.2rem;
+}
