@@ -36,18 +36,19 @@ function YourDetailsController() {
   ];
 
   this.phones = [{
-      type: 'Home',
-      number: '(555) 251-1234',
-      options: {
-        icon: 'communication:phone'
-      }
-    },
-    {
       type: 'Mobile',
       number: '(555) 786-9841',
       options: {
         default: true,
         offset: true
+      }
+    },
+    {
+
+      type: 'Home',
+      number: '(555) 251-1234',
+      options: {
+        icon: 'communication:phone'
       }
     }
   ];
@@ -76,6 +77,7 @@ function YourDetailsController() {
       postcode: 'EC1R 4RB',
       country: 'United Kingdom',
       options: {
+        default: true,
         icon: 'maps:place'
       }
     },

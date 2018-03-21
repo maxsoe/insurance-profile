@@ -8,7 +8,7 @@
           <img ng-src="{{detail.options.face}}?25" class="md-avatar" alt="{{detail.options.face}}" ng-if="detail.options.face" />
           <div class="md-list-item-text" ng-class="{'md-offset': detail.options.offset }">
             <h3> {{ detail.value }} </h3>
-            <p> {{ detail.type }} </p>
+            <p> {{ detail.type }}</p>
           </div>
           <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="detail.options.actionIcon" aria-label="call">
             <md-icon md-svg-icon="{{detail.options.actionIcon}}"></md-icon>
@@ -23,7 +23,7 @@
           <img ng-src="{{phone.options.face}}?25" class="md-avatar" alt="{{phone.options.face}}" ng-if="phone.options.face" />
           <div class="md-list-item-text" ng-class="{'md-offset': phone.options.offset }">
             <h3> {{ phone.number }} </h3>
-            <p> {{ phone.type }} </p>
+            <p> {{ phone.type }}  <span ng-if="phone.options.default">(default)</span></p>
           </div>
           <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="phone.options.actionIcon" aria-label="call">
             <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
@@ -35,7 +35,7 @@
           <img ng-src="{{email.options.face}}?25" class="md-avatar" alt="{{email.options.face}}" ng-if="email.options.face" />
           <div class="md-list-item-text" ng-class="{'md-offset': email.options.offset }">
             <h3> {{ email.address }} </h3>
-            <p> {{ email.type }} </p>
+            <p> {{ email.type }}  <span ng-if="email.options.default">(default)</span></p>
           </div>
           <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="email.options.actionIcon" aria-label="call">
             <md-icon md-svg-icon="{{email.options.actionIcon}}"></md-icon>
@@ -50,7 +50,7 @@
           <img ng-src="{{address.options.face}}?25" class="md-avatar" alt="{{address.options.face}}" ng-if="address.options.face" />
           <div class="md-list-item-text" ng-class="{'md-offset': address.options.offset }">
             <h3> {{ address.street }} </h3>
-            <p> {{ address.type }} </p>
+            <p> {{ address.type }} <span ng-if="address.options.default">(default)</span></p>
           </div>
           <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="phone.options.actionIcon" aria-label="call">
             <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
