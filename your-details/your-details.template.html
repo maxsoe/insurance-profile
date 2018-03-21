@@ -48,10 +48,10 @@
         <md-list-item class="md-2-line" ng-repeat="address in yourDetailsCtrl.addresses">
           <md-icon md-svg-icon="{{address.options.icon}}" ng-if="address.options.icon" ng-class="{'md-avatar-icon': phone.options.avatarIcon}"></md-icon>
           <img ng-src="{{address.options.face}}?25" class="md-avatar" alt="{{address.options.face}}" ng-if="address.options.face" />
-          <div class="md-list-item-text" ng-class="{'md-offset': address.options.offset }">
-            <h3> {{ address.street }} </h3>
-            <h3> {{ address.city }} {{ address.postcode }}</h3>
-            <h3>  {{ address.country }}</h3>
+          <div class="md-list-item-text" ng-class="{'md-offset': address.options.offset }" layout-gt-xs="row" layout-align=" none end">
+            <h3> {{ address.street }} <br>
+            {{ address.city }} {{ address.postcode }}<br>
+            {{ address.country }}</h3>
             <p> {{ address.type }} <span class="defaults" ng-if="address.options.default">(default)</span></p>
           </div>
         </md-list-item>
