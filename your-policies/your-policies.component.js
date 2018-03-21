@@ -16,24 +16,32 @@ function yourPoliciesController() {
   this.policies = [{
       type: 'Landlord contents insurance',
       expiry: '24 July 2018',
+      icon: 'LC',
+      iconColor: '#7e56c1',
       options: {
         claims: ['897645321', '579438675']
       }
     },
     {
       type: 'Professional indemnity insurance',
-      expiry: '21 October 2018'
+      expiry: '21 October 2018',
+      icon: 'PI',
+      iconColor: '#c1ba35'
     },
     {
       type: 'Unoccupied property insurance',
       expiry: '25 December 2018',
+      icon: 'UP',
+      iconColor: '#c1524a',
       options: {
         claims: ['486257952']
       }
     },
     {
       type: 'Public liability insurance',
-      expiry: '8 February 2019'
+      expiry: '8 February 2019',
+      icon: 'PL',
+      iconColor: '#37c128'
     }
   ];
 };
