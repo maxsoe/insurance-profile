@@ -5,7 +5,7 @@
     </md-card-avatar>
     <md-card-header-text>
       <span class="md-title">{{policy.type}}</span>
-      <span class="md-subhead">{{policy.expiry}}</span>
+      <span class="md-subhead">Expires {{policy.expiry}}</span>
     </md-card-header-text>
     <md-button class="md-icon-button" aria-label="More">
       <md-icon md-svg-icon="navigation:more-vert"></md-icon>
@@ -13,7 +13,7 @@
   </md-card-header>
   <md-divider ng-if="policy.options"></md-divider>
   <md-card-actions ng-if="policy.options" layout="column" layout-align="start start">
-    <md-button class="md-accent" ng-repeat="claim in policy.options.claims">{{claim}}</md-button>
+    <md-button class="md-accent" ng-repeat="claim in policy.options.claims">Claim #{{claim}}</md-button>
 
     <!-- <md-button class="md-accent">Claim #897645321</md-button>
     <md-button class="md-accent">Claim #579438675</md-button> -->
