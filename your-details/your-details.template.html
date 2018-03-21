@@ -23,7 +23,7 @@
           <img ng-src="{{phone.options.face}}?25" class="md-avatar" alt="{{phone.options.face}}" ng-if="phone.options.face" />
           <div class="md-list-item-text" ng-class="{'md-offset': phone.options.offset }">
             <h3> {{ phone.number }} </h3>
-            <p> {{ phone.type }} <span ng-if="phone.options.default">(default)</span></p>
+            <p> {{ phone.type }} <span class="defaults" ng-if="phone.options.default">(default)</span></p>
           </div>
           <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="phone.options.actionIcon" aria-label="call">
             <md-icon md-svg-icon="{{phone.options.actionIcon}}"></md-icon>
@@ -35,7 +35,7 @@
           <img ng-src="{{email.options.face}}?25" class="md-avatar" alt="{{email.options.face}}" ng-if="email.options.face" />
           <div class="md-list-item-text" ng-class="{'md-offset': email.options.offset }">
             <h3> {{ email.address }} </h3>
-            <p> {{ email.type }} <span ng-if="email.options.default">(default)</span></p>
+            <p> {{ email.type }} <span class="defaults" ng-if="email.options.default">(default)</span></p>
           </div>
           <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="email.options.actionIcon" aria-label="call">
             <md-icon md-svg-icon="{{email.options.actionIcon}}"></md-icon>
@@ -52,7 +52,7 @@
             <h3> {{ address.street }} </h3>
             <h3> {{ address.city }} {{ address.postcode }}</h3>
             <h3>  {{ address.country }}</h3>
-            <p> {{ address.type }} <span ng-if="address.options.default">(default)</span></p>
+            <p> {{ address.type }} <span class="defaults" ng-if="address.options.default">(default)</span></p>
           </div>
         </md-list-item>
       </md-list>

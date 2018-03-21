@@ -40,7 +40,7 @@ function YourDetailsController() {
       number: '(555) 786-9841',
       options: {
         default: true,
-        offset: true
+        icon: 'communication:phone'
       }
     },
     {
@@ -48,7 +48,7 @@ function YourDetailsController() {
       type: 'Home',
       number: '(555) 251-1234',
       options: {
-        icon: 'communication:phone'
+        offset: true
       }
     }
   ];
